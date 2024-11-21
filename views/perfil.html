@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block titulo%}
+Perfil
+{% endblock %}
+{% block body %}
+    <h1>Bienvenido, {{nombre}}</h1>
+    <a href="{{url_for('perro_bp.ver_perros')}}">Ver perros</a>
+    <a href="{{url_for('index')}}">Volver</a>
+{% endblock %}
